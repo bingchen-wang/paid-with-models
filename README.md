@@ -34,9 +34,6 @@ pip install -r requirements.txt
 
 > You can replicate Section 6.1 by running the script [📜 Experiment_Twotype_Case.ipynb](Experiment_Twotype_Case.ipynb).
 
-
-You can replicate Section 6.1 by running the script [📜 Experiment_Twotype_Case.ipynb](Experiment_Twotype_Case.ipynb).
-
 ### Section 6.2 Multi-type Case
 <div style="text-align: center; width: 50%; margin: 0 auto;">
   <img src="assets/figures/Multitype_case_onecolumn.png" alt="Multi-type Case" width="50%">
@@ -48,7 +45,7 @@ You can replicate Section 6.1 by running the script [📜 Experiment_Twotype_Cas
   </p>
 </div>
 
-You can replicate Section 6.2 by running the script [📜 Experiment_Multitype_Case.ipynb](Experiment_Multitype_Case.ipynb).
+> You can replicate Section 6.2 by running the script [📜 Experiment_Multitype_Case.ipynb](Experiment_Multitype_Case.ipynb).
 
 ### Appendix A.1 Related Work
 <div style="text-align: center; width: 50%; margin: 0 auto;">
@@ -58,6 +55,26 @@ You can replicate Section 6.2 by running the script [📜 Experiment_Multitype_C
   </p>
 </div>
 
-You can replicate Appendix A.1 by running the script [📜 Appendix_A_Related_Work.ipynb](Appendix_A_Related_Work.ipynb).
+> You can replicate Appendix A.1 by running the script [📜 Appendix_A_Related_Work.ipynb](Appendix_A_Related_Work.ipynb).
 
 ## Additional Experiments
+In addition to the experiments presented in the paper, we provide two additional experiments in the repository for interested readers.
+
+
+### Constraint Simplication: Speed-up effect?
+The contribution of constraint analysis in the paper comes in two fronts. First, it helps establish clean properties of the optimal contract. Second, it may help speed up computation (~15% for Sec. 6.2.).  However, the effect depends significantly on the choice of optimization algorithm—it is expected to be more pronounced for active-set methods [1] and likely to matter less so for others.
+
+> The scripts [📜 Experiment_Twotype_Case.ipynb](Experiment_Twotype_Case.ipynb) and [📜 Experiment_Multitype_Case_noSimp.ipynb](Experiment_Multitype_Case_noSimp.ipynb) run through the experiments in Sec. 6.1 and Sec. 6.2 without the constraint simplication.
+
+### Scalability: Running-time increase with $N$ and $K$.
+Our preliminary experiments show that the algorithm’s running time increases at roughly a factor of 2 per additional type added, while increments in $N$ has less effect. This corroborates our discussion on the combinatorial challenge in Appendix B.9. Our current model is best suited for cases where N and I are reasonably finite, as is the case of cross-silos collaboration.  For reference, it took 8.03 seconds (wall-clock) to run the experiments in Sec 6.2 on a Macbook Pro with M2 chip. We posit that scalability can be improved with relaxation on the distribution assumption, which is an active research area [2]. It can also be improved with better approximation algorithms, though with a trade-off between welfare and speed of computation.
+
+> Interested reader can implement [📜 Scalability_check_increasing_N.py](Scalability_check_increasing_N.py) and [📜 Scalability_check_increasing_types.py](Scalability_check_increasing_types.py) to see the increase in running time.
+
+
+
+## References
+
+1. **Nocedal, J., & Wright, S. J. (2006).** *Numerical Optimization*. Springer, 2006, p.424. [Available through Springer](https://link.springer.com/book/10.1007/978-0-387-40065-5).  
+
+2. **Dütting, P., et al. (2019).** *Simple versus Optimal Contracts*. Presented at EC'19. [Available through ACM Digital Library](https://dl.acm.org/doi/10.1145/3328526.3329591).
