@@ -32,10 +32,10 @@ pip install -r requirements.txt
   </p>
 </div>
 
-<div style="background-color: #d1ecf1; border: 1px solid #bee5eb; padding: 10px; border-radius: 5px;">
-  <strong>Note:</strong> You can replicate Section 6.1 by running the script 
-  <a href="Experiment_Twotype_Case.ipynb" style="text-decoration: none; color: inherit;">📜 Experiment_Twotype_Case.ipynb</a>.
-</div>
+| 🗒️ **Note** |
+|-------------|
+| You can replicate Section 6.1 by running the script [📜 Experiment_Twotype_Case.ipynb](Experiment_Twotype_Case.ipynb). |
+
 
 You can replicate Section 6.1 by running the script [📜 Experiment_Twotype_Case.ipynb](Experiment_Twotype_Case.ipynb).
 
