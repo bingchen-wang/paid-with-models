@@ -34,7 +34,7 @@ pip install -r requirements.txt
 
 <div align="center">
   <img src="assets/figures/Two-type_case_onecolumn.png" alt="Two-type Case" width="50%">
-  <p style="text-align: center;">
+  <p style="text-align: left; width: 50%;">
     <strong>Top:</strong> Optimal contracts under incomplete information for varied probability of high-cost type 
     $p_1 \in (0,1)$ and total number of participants 
     $N \in [2, 100]$, with $c = \{0.02, 0.01\}$. <br>
