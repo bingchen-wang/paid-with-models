@@ -12,7 +12,7 @@ Codebase for "Paid with Models: Optimal Contract Design for Collaborative Machin
 - **Institution/Organization:** National University of Singapore (NUS)
 - **Website/Portfolio:** [Bingchen's Google Site](https://sites.google.com/view/bingchenwang/)
 
-Feel free to contact me if you encounter any code-related question.
+Feel free to contact me if you have any code-related question.
 ## Requirements
 Ensure Python dependencies are met by installing the following:
 
