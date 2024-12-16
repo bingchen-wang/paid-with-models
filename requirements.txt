@@ -1,0 +1,5 @@
+numpy>=1.23.5
+scipy>=1.10.1
+matplotlib>=3.7.1
+tqdm>=4.65.0
+pandas>=2.0.3
