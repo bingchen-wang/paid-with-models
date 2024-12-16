@@ -32,6 +32,9 @@ pip install -r requirements.txt
   </p>
 </div>
 
+<div align="center">
+  <img src="assets/figures/Two-type_case_onecolumn.png" alt="Two-type Case" width="50%">
+</div>
 
 > You can replicate Section 6.1 by running the script [📜 Experiment_Twotype_Case.ipynb](Experiment_Twotype_Case.ipynb).
 
