@@ -32,9 +32,8 @@ pip install -r requirements.txt
   </p>
 </div>
 
-| 🗒️ **Note** |
-|-------------|
-| You can replicate Section 6.1 by running the script [📜 Experiment_Twotype_Case.ipynb](Experiment_Twotype_Case.ipynb). |
+
+> You can replicate Section 6.1 by running the script [📜 Experiment_Twotype_Case.ipynb](Experiment_Twotype_Case.ipynb).
 
 
 You can replicate Section 6.1 by running the script [📜 Experiment_Twotype_Case.ipynb](Experiment_Twotype_Case.ipynb).
